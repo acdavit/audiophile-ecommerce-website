@@ -15,7 +15,6 @@ import BackButton from "../../shared-components/back-button/BackButton";
 export default function ProductPage({product}){
     const {width} = useWindowDimensions();
     const dispatch = useDispatch();
-    const navigate = useNavigate();
     const cart = useSelector(state => state.cart);
     const cartIndex = cart.findIndex(item => item.slug === product.slug);
     const [quantity, setQuantityState] = useState((
@@ -111,7 +110,5 @@ export default function ProductPage({product}){
         <OtherProducts products={product.others} device={device}/>
         <Categories/>
         <BestGear/>
-
-        <button onClick={() => dispatch(removeItem(cartIndex))}>DEBUG CART REMOVE</button>
     </div>)
 }
