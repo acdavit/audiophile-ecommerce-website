@@ -21,7 +21,7 @@ export default function Cart({ setCartVisibility }) {
                         <button onClick={() => dispatch(clearCart())}>Remove all</button>
                     </div>
 
-                    <div className={cart < 4 ? 'cart-items' : 'cart-items cart-items-overflow'}>
+                    <div className={cart.length < 4 ? 'cart-items' : 'cart-items cart-items-overflow'}>
                         {cart.map((item, index) => <CartItem key={index} item={item} index={index}/>)}
                     </div>
 
