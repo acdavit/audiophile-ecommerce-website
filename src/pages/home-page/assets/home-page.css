@@ -1,0 +1,289 @@
+#home-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+#new-product{
+    height: 510px;
+    background-color: #191919;
+    background-image: url(./mobile/image-header.jpg);
+    background-position: center;
+    background-size: auto 510px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#new-product > *{
+    max-width: 328px;
+}
+
+#new-product > h1{
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 10px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+#new-product > h2{
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 1.28571px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+#new-product > p{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.75;
+    margin: 24px 0;
+}
+
+#new-product > button{
+    margin: 4px 0;
+}
+
+#zx9-card{
+    background: #D87D4A;
+    background-image: url(./desktop/pattern-circles.svg);
+    background-position: top -120px center ;
+    background-size: auto 600px;
+    background-repeat: no-repeat;
+    padding: 55px 24px;
+}
+
+#zx9-card, #zx9-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#zx9-content >*{
+    text-align: center;
+}
+
+#zx9-card > img{
+    height: 207px;
+    margin-bottom: 40px;
+}
+
+#zx9-content > h1{
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 1.28571px;
+    margin: 0;
+}
+
+#zx9-content > p{
+    margin: 24px 0;
+    max-width: 349px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.75;
+}
+
+#zx7-card{
+    height: 327px;
+    background-color: #CDCDCD;
+    background-image: url(./mobile/image-speaker-zx7.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    gap: 32px;
+    padding-left: 25.5px;
+}
+
+#zx7-card > h4{
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: 2px;
+    color: #000000;
+    margin: 0;
+}
+
+#yx1-container{
+    display: flex;
+    flex-direction: column;
+}
+
+#yx1-container > *{
+    height: 200px;
+}
+
+#yx1-photo-card{
+    background-image: url(./mobile/image-earphones-yx1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+}
+
+#yx1-card{
+    background-color: #F1F1F1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 24px;
+    gap: 32px;
+}
+
+#yx1-card > h4{
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: 2px;
+    color: #000000;
+    margin: 0;
+}
+
+
+@media screen and (min-width: 768px){
+    #new-product{
+        height: 639px;
+        background-position: bottom;
+        background-size: auto 750px;
+        background-repeat: no-repeat;
+    }
+    #new-product > *{
+        max-width: 396px;
+    }
+    #new-product > h1{
+        margin: 0;
+    }
+    #new-product > h2{
+        font-size: 56px;
+        line-height: 58px;
+        letter-spacing: 2px;
+        margin: 24px 0;
+    }
+    #new-product > p{
+        max-width: 349px;
+        margin: 0;
+    }
+    #new-product > button{
+        margin: 40px 0;
+    }
+    .card{
+        margin: 16px 0;
+    }
+    #zx9-card{
+        padding: 64px;
+        background-image: url(./desktop/pattern-circles.svg);
+        background-position: top -290px center ;
+        background-size: auto 950px;
+    }
+    #zx9-card > img{
+        height: 217px;
+        margin-bottom: 72px;
+    }
+    #zx9-content > h1{
+        font-size: 56px;
+        line-height: 58px;
+        letter-spacing: 2px;
+    }
+    #zx9-content > button{
+        margin-top: 16px;
+    }
+    #zx7-card{
+        height: 320px;
+        padding-left: 62.25px;
+        background-image: url(./tablet/image-speaker-zx7.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    #yx1-container {
+        flex-direction: row;
+        gap: 11px;
+    }
+    #yx1-container > *{
+        flex: 1;
+        height: 320px;
+        padding-left: 41px;
+    }
+    #yx1-photo-card{
+        background: url('./tablet/image-earphones-yx1.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .card{
+        margin: 24px 0;
+    }
+    #new-product{
+        background-image: url(./desktop/image-hero.jpg);
+        height: 632px;
+        background-size: 1400px;
+        background-position: bottom center;
+        max-width: 1110px;
+        padding: 0 var(--padding);
+        align-items: first baseline;
+    }
+    #new-product > h2, #new-product > p{
+        text-align: left;
+    }
+    #zx9-card{
+        flex-direction: row; 
+        justify-content: center;
+        gap: 132px;
+        height: 560px;
+        padding: 0;
+        overflow: hidden;
+        background-position: top left -155px;
+    }
+    #zx9-card > img{
+        height: 460px;
+        align-self: flex-end;
+        margin: 0;
+        margin-bottom: -10px;
+    }
+    #zx9-content{
+        align-items: flex-start;
+    }
+    #zx9-content > h1, #zx9-content > p{
+        text-align: left;
+    }
+    #zx7-card{
+        height: 320px;
+        padding-left: 95px;
+        background-image: url('./desktop/image-speaker-zx7.jpg');
+        background-size: cover;
+        background-position: center;            
+    }
+    #yx1-container{
+        gap: 30px
+    }
+    #yx1-container > *{
+        height: 320px;
+        padding-left: 96.5px;
+    }
+    #yx1-photo-card{
+        background-image: url(./desktop/image-earphones-yx1.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+}

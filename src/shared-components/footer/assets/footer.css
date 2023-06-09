@@ -1,0 +1,126 @@
+footer{
+    margin-top: auto;
+    padding: 38px var(--padding);
+    padding-top: 0;
+    background-color: #101010;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#description-socials{
+    display: none;
+}
+
+#footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1110px;
+}
+
+#orange-line{
+    width: 101px;
+    height: 4px;
+    background-color: #D87D4A;
+}
+
+#logo-footer{
+    margin: 48px 0;
+}
+
+#footer-content p{
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    margin: 48px 0;
+}
+
+#footer-content h2{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    margin-bottom: 48px;
+}
+
+#copyright-and-socials{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 768px){
+    footer{
+        padding: 40px var(--padding);
+        padding-top: 0;
+    }
+    #footer-content{
+        align-items: flex-start;
+    }
+    #orange-line{
+        margin-bottom: 56px;
+    }
+    #logo-footer{
+        margin: 0;
+    }
+    #footer-content nav{
+        margin: 32px 0;
+    }
+    #footer-content p{
+        text-align: left;
+        margin: 0;
+        margin-bottom: 80px;
+    }
+    #footer-content h2{
+        margin: 0;
+    }
+    #copyright-and-socials{
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    footer{
+        padding: 0;
+        padding-bottom: 48px;
+    }
+    #logo-and-navigation{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 36px;
+    }
+    #orange-line{
+        margin-bottom: 71px;
+    }
+    #footer-content nav{
+        margin: 0;
+    }
+    #description-and-socials{
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 58px;
+    }
+    #description-and-socials > *{
+        width: 50%;
+    }
+    #description-socials{
+        display: flex;
+        justify-content: flex-end;
+    }
+    #footer-content p{
+        margin: 0;
+    }
+    #copyright-and-socials > * :last-child{
+        display: none;
+    }
+}

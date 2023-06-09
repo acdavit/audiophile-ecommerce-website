@@ -1,0 +1,94 @@
+.orange-text{
+    color: #D87D4A;
+}
+
+.best-gear{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 96px 0;
+}
+
+.best-gear-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.image-best-gear{
+    width: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+    content: url('./image-best-gear-mobile.jpg');
+}
+
+.best-gear h2{
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    max-width: 327px;
+    margin: 32px 0;
+}
+
+.best-gear p{
+    margin: 0;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+@media screen and (min-width: 768px){
+    .image-best-gear{
+        content: url('./image-best-gear-tablet.jpg');
+    }
+
+    .best-gear{
+        margin: 72px 0;
+    }
+
+    .best-gear h2{
+        font-size: 40px;
+        line-height: 44px;
+        letter-spacing: 1.42857px;
+        max-width: 100%;
+    }
+
+    .best-gear-text{
+        max-width: 573px;
+        margin-top: 32px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .image-best-gear{
+        content: url('./image-best-gear-desktop.jpg');
+        max-width: 540px;
+    }
+
+    .best-gear{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin: 200px 0;
+    }
+
+    .best-gear h2{
+        margin-top: 0;
+    }
+
+    .best-gear-text{
+        max-width: 445px;
+        text-align: left;
+        margin: 0;
+    }
+
+
+}

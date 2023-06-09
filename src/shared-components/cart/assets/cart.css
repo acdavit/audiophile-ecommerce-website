@@ -1,0 +1,131 @@
+#cart-background{
+    position: fixed;
+    z-index: 3;
+    top: var(--header-height);
+    left: 0;
+    width: 100%;
+    height: calc(100vh - var(--header-height));
+    background: #000000;
+    opacity: 0.4 !important;
+}
+
+#cart-card{
+    position: fixed;
+    z-index: 4;
+    top: calc(var(--header-height) + 24px);
+    right: 24px;
+    padding: 32px 28px;
+    width: calc(100vw - 104px);
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+
+#title-bar{
+    margin-bottom: 31px;
+}
+
+#title-bar, #total{
+    justify-content: space-between;
+}
+
+#title-bar > span{
+    letter-spacing: 1.28571px;
+}
+
+#title-bar > button{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    text-decoration-line: underline;
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+#title-bar > button:hover{
+    color: #D87D4A;
+    opacity: 1;
+}
+
+#title-bar > span, #total-price{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+
+#total-label{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    color: #000000;
+    text-transform: uppercase;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+#total{
+    margin-top: 32px;
+    margin-bottom: 24px;
+}
+
+.cart-items{
+    display:flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.cart-items-overflow{
+    max-height: 240px;
+    overflow: scroll;
+}
+
+#checkout-button{
+    width: 100%;
+}
+
+#no-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 16px; */
+}
+
+#no-items > *{
+    margin: 0;
+}
+
+#no-items > h1{
+    font-weight: 700;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+#no-items > p{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+@media screen and (min-width: 768px) {
+    #cart-card {
+        max-width: 377px;
+        padding: 32px;
+        right: 40px;
+    }
+}
+
+@media screen and (min-width:1200px){
+    #cart-card {
+        right: calc((100vw - 1110px) / 2 );
+        margin-right: 0;
+    }
+}

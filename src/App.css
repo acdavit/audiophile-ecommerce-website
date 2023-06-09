@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+:root{
+    --padding: 24px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+   animation: fade 0.3s linear;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.full-width{
+    width: calc(100% + (var(--padding) * 2));
+    margin-left: calc(var(--padding) * -1);
+    padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.button{
+    width: 160px;
+    height: 48px;
+    border: none;
+    font-family: 'Manrope';
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.button-orange{
+    background-color: #D87D4A;
+    color: #FFFFFF;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-orange:hover{
+    background-color: #FBAF85;
+}
+
+.button-grey{
+    background-color: #F1F1F1;
+    color: #000000;
+}
+
+.button-black{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.button-black:hover{
+    background-color: #4C4C4C;
+}
+
+.button-transparent{
+    background: none;
+    border: 1px solid #000000;
+    color: #000000;
+}
+
+.button-transparent:hover{
+    background: #000000;
+    color: #FFFFFF;
+}
+
+.card{
+    border-radius: 8px;
+    margin: 12px 0;
+}
+
+.hidden{
+    display: none !important;
+}
+
+#app{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#content-container{
+    margin: 0 var(--padding);
+    margin-top: var(--header-height);
+}
+
+
+
+@media screen and (min-width: 768px){
+    :root{
+        --padding: 40px; 
+    }
+}
+
+@media screen and (min-width: 1200px){
+    :root{
+        --padding: calc((100vw - 1110px - var(--scrollbar-width)) / 2); 
+    }
+    #content-container{max-width: 1110px;}
+}
+
+@keyframes fade {
+    0% { opacity: 0;}
+    100% { opacity: 1 }
 }

@@ -1,0 +1,13 @@
+.social-media-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon{
+    margin: 0 8px;
+}
+
+.social-icon:hover{
+    filter: brightness(0) saturate(100%) invert(72%) sepia(17%) saturate(3760%) hue-rotate(325deg) brightness(89%) contrast(90%);
+}
